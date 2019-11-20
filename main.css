@@ -1,6 +1,6 @@
 div.inputs {
     margin: auto;
-    margin-top: 300px;
+    margin-top: 200px;
     text-align: center;
     width: 400px;
     font-family: Arial;
@@ -39,12 +39,30 @@ button {
     transition: 0.5s ease;
 }
 
+#register_submit {
+    background-color: #0077ff;
+}
+
 button:hover {
     background-color: #eeeeee;
     color: #000000;
 }
 
-h1 {
-    border-bottom: #aaaaaa solid 2px;
-    font-size: 50px;
+#register_submit:hover {
+    background-color: #eeeeee;
+    color: #000000;
 }
+
+h1 {
+    font-size: 70px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-bottom: solid 2px #eeeeee;
+    padding: 0;
+}
+
+img {
+    padding-right: 15px;
+}
+
+
