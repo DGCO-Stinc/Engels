@@ -66,3 +66,12 @@ img {
 }
 
 
+.hidden
+{
+    display: none;
+}
+
+.active
+{
+    display:block;
+}

@@ -25,6 +25,11 @@ if(isset($_REQUEST['login_submit'])){
     }
 }
 
+if(isset($_REQUEST['register_submit']))
+{
+    
+}
+
 
 
 //session_start();
