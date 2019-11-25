@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="script.js"></script>
+    <title>XPence</title>
+</head>
+<body class="container">
+    <div class="content">
+        <div class="navigation">
+            <img class="white-logo" src="Images/centralized-structure white.svg" alt="icon white" width="50px" height="50px">
+            <ul>
+                <li class="nav actief" id="nav1"><i class="material-icons">dashboard</i><a onclick="hidetext1()">Dashboard</a></li>
+                <li class="nav" id="nav2"><i class="material-icons">add</i><a onclick="hidetext2()">Income</a></li>
+                <li class="nav" id="nav3"><i class="material-icons">remove</i><a onclick="hidetext3()">Expences</a></li>
+                <li class="nav" id="nav4"><i class="material-icons">create</i><a onclick="hidetext4()">Options</a></li>
+            </ul>
+        </div>
+        <div id="main1" class="hidden active">
+            <h1>Dashboard</h1>
+        </div>
+
+        <div id="main2" class="hidden">
+            <h1>Income</h1>
+            <div class="form">
+                <input type="text" name="title" placeholder="Name" >
+                <input type="text" name="type" placeholder="Type">
+                <input type="number" name="amount" placeholder="0">
+            </div>     
+        </div>
+        <div id="main3" class="hidden">
+            <h1>Expences</h1>
+            <p>Text3</p>
+        </div>
+        <div id="main4" class="hidden">
+            <h1>Options</h1>
+            <p>Text4</p>
+        </div>
+    </div>
+
+    <div class="content2">
+        <h1 class="dash">Head-Right</h1>
+    </div>
+</body>
+</html>

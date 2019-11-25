@@ -1,0 +1,74 @@
+
+div.inputs {
+    margin: auto;
+    margin-top: 200px;
+    text-align: center;
+    width: 400px;
+    font-family: Arial;
+}
+
+input {
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #eeeeee;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: 0.6s ease;
+}
+
+input:hover {
+    width: 400px;
+}
+
+input:focus {
+    background-color: #bbbbbb;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #222222;
+    transition: 0.5s ease;
+}
+
+#register_submit {
+    background-color: #0077ff;
+}
+
+button:hover {
+    background-color: #eeeeee;
+    color: #000000;
+}
+
+#register_submit:hover {
+    background-color: #eeeeee;
+    color: #000000;
+}
+
+h1 {
+    font-size: 70px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-bottom: solid 2px #eeeeee;
+    padding: 0;
+}
+
+footer {
+    color: #aaaaaa;
+    margin-top: 10px;
+    bottom: 0;
+    text-align: center;
+}
+
+img.inlog {
+    padding-right: 15px;
+}
