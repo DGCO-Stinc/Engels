@@ -12,7 +12,7 @@
 <body class="container">
     <div class="content">
         <div class="navigation">
-            <img class="white-logo" src="Images/centralized-structure white.svg" alt="icon white" width="50px" height="50px">
+            <img class="white-logo" src="images/logo-white.svg" alt="icon white" width="50px" height="50px">
             <ul>
                 <li class="nav actief" id="nav1"><i class="material-icons">dashboard</i><a onclick="hidetext1()">Dashboard</a></li>
                 <li class="nav" id="nav2"><i class="material-icons">add</i><a onclick="hidetext2()">Income</a></li>
@@ -22,15 +22,10 @@
         </div>
         <div id="main1" class="hidden active">
             <h1>Dashboard</h1>
-        </div>
+        </div>2
 
         <div id="main2" class="hidden">
-            <h1>Income</h1>
-            <div class="form">
-                <input type="text" name="title" placeholder="Name" >
-                <input type="text" name="type" placeholder="Type">
-                <input type="number" name="amount" placeholder="0">
-            </div>     
+            <h1>Income</h1>  
         </div>
         <div id="main3" class="hidden">
             <h1>Expences</h1>
@@ -43,7 +38,17 @@
     </div>
 
     <div class="content2">
-        <h1 class="dash">Head-Right</h1>
+        <h1 class="dash">Add</h1>
+        <div class="form">
+            <h3>Enter Name</h3><input id="name" type="text" name="title">
+            <h3>Enter Type</h3><select name="type">
+                <option value="Expence">Expence</option>
+                <option value="Income">Income</option>
+            </select>
+            <h3>Enter amount</h3><input id="amount" type="number" name="amount" placeholder="€0" min='0' max='10000' maxlength='5' step='1'><br>
+            <button type="submit" value="transfer" name="submit">Submit</button>
+            <button id="clear" onclick="clearInput()">Clear</button>
+        </div>   
     </div>
 </body>
 </html>

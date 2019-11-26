@@ -1,4 +1,3 @@
-
 function hidetext1() {
     let x = document.getElementById("main1");
     let y = document.getElementById("nav1");
@@ -68,6 +67,8 @@ function hidetext4() {
     }
 }
 
-
-
-
+function clearInput() {
+    document.getElementById('name').value = '';
+    document.getElementById('type').value = '';
+    document.getElementById('amount').value = '';
+}
