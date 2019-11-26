@@ -69,6 +69,22 @@ function hidetext4() {
 
 function clearInput() {
     document.getElementById('name').value = '';
-    document.getElementById('type').value = '';
-    document.getElementById('amount').value = '';
+    document.getElementById('amount').value = null;
+}
+
+function hideAdd() {
+    let x = document.getElementsByClassName("form");
+    let y = document.getElementsByClassName("content2");
+    if(!x[0].classList.contains("visi")) {        
+        y[0].style.width = "20%";
+        y[0].style.left = "80%";
+        setTimeout(function() {
+            x[0].classList.add("visi");
+        }, 300);
+    } else {
+        y[0].style.width = "5%";
+        y[0].style.left = "95%";
+        x[0].classList.remove("visi");
+    }
+
 }

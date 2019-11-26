@@ -1,3 +1,8 @@
+body {
+    background-color: #42455a;
+    color: white;
+}
+
 div.inputs {
     margin: auto;
     margin-top: 200px;
@@ -12,7 +17,7 @@ input {
     text-align: center;
     margin-bottom: 10px;
     border: none;
-    background-color: #eeeeee;
+    background-color: #383a4d;
     border-radius: 5px;
     font-size: 20px;
     transition: 0.6s ease;
@@ -35,22 +40,22 @@ button {
     text-decoration: none;
     font-size: 18px;
     color: #ffffff;
-    background-color: #222222;
+    background-color: #383a4d;
     transition: 0.5s ease;
 }
 
 #register_submit {
-    background-color: #0077ff;
+    background-color: #004ea7;
 }
 
 button:hover {
-    background-color: #eeeeee;
-    color: #000000;
+    background-color: #242531;
+    color: #ffffff;
 }
 
 #register_submit:hover {
-    background-color: #eeeeee;
-    color: #000000;
+    background-color: #0077ff;
+    color: #ffffff;
 }
 
 h1 {
