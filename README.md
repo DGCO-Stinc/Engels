@@ -24,6 +24,6 @@ The idea to make a website to manage your income and expences.
 + Type - Defines if its an income or expence.
 + Amount - Specifies the amount in euro's.
 
-After subitting your form you can find it in either the expence tab or the income tab.
+After submitting your form you can find it in either the expence tab or the income tab.
 
 
