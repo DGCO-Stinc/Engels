@@ -1,10 +1,10 @@
 # Money Management Website
 English project.
 
-Authors: Dave, Geordi, Joran en Winson.
+Authors: Dave, Geordi, Joran en Win son.
 
 >   Structure and Styling   - **Dave**.  
->   Main Site Functionality  - **Winson**.  
+>   Main Site Functionality  - **Win son**.  
 >   Login and Register logic - **Geordi**.  
 
 
