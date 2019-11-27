@@ -9,20 +9,17 @@ class DATA
     private $host = "localhost";
     public $dbh;
 
-    public function __construct()
+    function connect()
     {
-        try
-        {
-            $db = new PDO("mysql:host=".$this->host.";dbname=".$this->dbname,$this-uname,$this->pass);
-            $this->dbh = $db;
+        $this->dbh = null;
+        try{
+            $this->dbh = new PDO("mysql:host=".$this->host.";dbname=".$this->dbname, $this->uname, $this->pass);
+            $this->dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
         }catch(PDOException $e)
         {
-            echo $e->getErrorMessage();
+            echo $e->getTraceAsString();
+            echo "<br>".$e->getMessage();
         }
-    }
-
-    public function connect()
-    {
         return $this->dbh;
     }
 }

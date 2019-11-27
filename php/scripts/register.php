@@ -1,9 +1,10 @@
 <?php
-
 require_once("../dbh.inc.php");
-$dbh = new DATA();
+$DATA = new DATA();
+$dbh = $DATA->connect();
 
-if(isset($_REQUEST['uname'])&&isset($_REQUEST['pass']))
+// the error is somewhere in here...
+if(isset($_REQUEST['uname'])&&($_REQUEST['pass']))
 {
     $uname = strtolower(filter_var($_REQUEST['uname'],FILTER_SANITIZE_STRING)); // grab ajax input
     $pass = md5(filter_var($_REQUEST['pass'],FILTER_SANITIZE_STRING));
@@ -21,7 +22,7 @@ if(isset($_REQUEST['uname'])&&isset($_REQUEST['pass']))
         $sql = "INSERT INTO eng_user (username, pass) VALUES (?,?)"; // 
 
         $stmt = $dbh->prepare($sql);
-        $stmt->execute($uname,$pass);
+        $stmt->execute(array($uname,$pass));
         echo "success";
     }
 }else
