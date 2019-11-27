@@ -1,10 +1,12 @@
 # Money Management Website
- English project
- Authors: Dave, Geordi, Joran en Winson.
+English project.
 
-Login and Register logic -> Geordi
-Structure and Styling    -> Dave
-Main Site Functionality  -> Winson 
+Authors: Dave, Geordi, Joran en Win son.
+
+>   Structure and Styling   - **Dave**.  
+>   Main Site Functionality  - **Win son**.  
+>   Login and Register logic - **Geordi**.  
+
 
 ### Functionalities
 
@@ -22,6 +24,6 @@ The idea to make a website to manage your income and expences.
 + Type - Defines if its an income or expence.
 + Amount - Specifies the amount in euro's.
 
-After subitting your form you can find it in either the expence tab or the income tab.
+After submitting your form you can find it in either the expence tab or the income tab.
 
 
