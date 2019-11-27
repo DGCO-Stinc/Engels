@@ -9,7 +9,7 @@ $(function()
         $.ajax(
             {
                 type:"POST",
-                url:"php/scripts/login.php",
+                url:"../php/scripts/login.php",
                 data:({
                     uname:username,
                     pass:pass                    
@@ -40,7 +40,7 @@ $(function()
         $.ajax(
             {
                 type:"POST",
-                url:"php/scripts/register.php",
+                url:"../php/scripts/register.php",
                 data:({
                     uname:username,
                     pass:pass
