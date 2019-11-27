@@ -1,5 +1,5 @@
 <?php
-require_once("php/dbh.inc.php");
+require_once("../dbh.inc.php");
 $dbh = new DATA();
 
 
@@ -17,20 +17,11 @@ if(isset($_REQUEST['login_submit'])){
         {
             session_start();
             $_SESSION['user_ID'] = $data['userID'];
-            header("Location: dashboard.php");
+            echo "success";
         }else
         {
-            header("Location: index.html");
+            echo "failed";
         }
     }
 }
-
-if(isset($_REQUEST['register_submit']))
-{
-    
-}
-
-
-
-//session_start();
 

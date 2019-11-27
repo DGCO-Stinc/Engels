@@ -12,14 +12,18 @@
         <div class="head">
             <h1 class="inlog"><img class="inlog" src="images/logo-white.svg" alt="logo" width="50px" height="50px">XPence</h1>
         </div>
-        <form action="login.php" method="POST">
+        <div id="login_form">
             <input type="text" placeholder="Username" name="uname" id="uname" required><br>
-            <input type="password"placeholder="Password" name="pass" id="pass" required><br>
+            <input type="password" placeholder="Password" name="pass" id="pass" required><br>
             <button type="submit" id="login_submit" value="login">Login</button>
-            <button type="submit" id="register_submit" value="Register">Register</button>
-        </form>
+            <button type="submit" id="register_submit" value="register">Register</button>
+        </div>
+        <div id="message"></div>
     </div>
     <footer>- Dave Geordi Joran Winson -</footer>
     <footer>- 2019-2020 @ Copyright -</footer>
+
+    <script src="js/jquery-core.js"></script>
+    <script src="js/login.js"></script>
 </body>
 </html>

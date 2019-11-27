@@ -3,9 +3,9 @@
 class DATA
 {
 
-    private $uname = "root";
-    private $pass = "";
-    private $dbname = "english";
+    private $uname = "deb113326_2092822";
+    private $pass = "!Hallo_123";
+    private $dbname = "deb113326_2092822";
     private $host = "localhost";
     public $dbh;
 
