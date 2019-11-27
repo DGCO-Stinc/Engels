@@ -18,6 +18,7 @@
                 <li class="nav" id="nav3" onclick="hidetext3()"><i class="material-icons">remove</i><a>Expences</a></li>
                 <li class="nav" id="nav4" onclick="hidetext4()"><i class="material-icons">create</i><a>Options</a></li>
             </ul>
+            <button id="signup" name="signup" onclick="location.href='login.html';">sign up</button>
         </div>
         <div id="main1" class="hidden active">
             <h1>Dashboard</h1>
@@ -37,7 +38,7 @@
     </div>
 
     <div class="content2">
-        <h1 onclick="hideAdd()" class="dash">+</h1>
+        <div onclick="hideAdd()"><i class="material-icons" id="btn">add</i></div>
         <div class="form invisi">
             <h3>Enter Name</h3><input id="name" type="text" name="title">
             <h3>Enter Type</h3><select name="type">

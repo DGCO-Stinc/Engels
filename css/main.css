@@ -1,4 +1,4 @@
-body {
+body {                                          /*Main Components Styling*/
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -24,7 +24,7 @@ img.white-logo {
     padding-top: 30px;
 }
 
-.navigation {
+.navigation {                                        /*Navigation Styling*/
     height: 100%;
     width: 10%; 
     position: fixed;
@@ -52,13 +52,7 @@ img.white-logo {
     display: block;
 }
 
-#main1, #main2, #main3, #main4 {
-    margin: 0;
-    padding: 0;
-    margin-left: 20%;
-}
-
-.hidden {
+.hidden {                                     /*Diplay and Hide Functions*/
     display: none;
 }
 
@@ -78,7 +72,7 @@ img.white-logo {
     transition: visibility 0s, opacity .3s ease;
 }
 
-li.nav {
+li.nav {                                                /*Navbar Styling*/
     width: 100%;
     transition: width .5s;
     transition: ease .5s;
@@ -93,6 +87,12 @@ li.nav.actief {
 li.nav:hover:not(.actief) {
     background: #3e404e;
     width: 220px;
+}
+
+#main1, #main2, #main3, #main4 {                  /*Main Content Styling*/
+    margin: 0;
+    padding: 0;
+    margin-left: 20%;
 }
 
 div.content {
@@ -115,7 +115,7 @@ div.content2 {
     transition: ease .5s;
 }
 
-::-webkit-scrollbar {
+::-webkit-scrollbar {                                 /*Scrollbar Styling*/
     width: 8px;
 }
 
@@ -129,7 +129,7 @@ i {
     padding-left: 10px;
 }
 
-input {
+input { /*Input Styling*/
     width: 80%;
     height: 40px;
     border: none;
@@ -146,7 +146,7 @@ input:hover {
     width: 90%;
 }
 
-button {
+button {                                                 /*Button Styling*/
     margin-top: 20px;
     width: 20%;
     height: 40px;
@@ -175,7 +175,7 @@ h3 {
     margin-left: 10%;
 }
 
-select {
+select {                                                 /*Option Styling*/
     width: 80%;
     height: 40px;
     border: none;
@@ -191,14 +191,26 @@ select:hover {
     width: 90%;
 }
 
-
 footer {
     margin-top: 150%;
     color: #aaaaaa;
 }
 
+#btn {                                             /*Add button animation*/
+    width: 100%;
+    font-size: 48px;
+    transition: ease .5s;
+    padding: 10px 0 10px 0;
+}
 
+#signup {                                                 /*Signup button*/
+    width: 50%;
+    margin: 4%;
+    margin-left: 25%;
+    margin-top: 300%; 
+}
 
+                                                                    /*php*/
 .message_error
 {
     /*

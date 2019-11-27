@@ -1,6 +1,6 @@
-body {
+body {                              /*Main Components Styling*/
     background-color: #42455a;
-    color: white;
+    color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -12,7 +12,22 @@ div.inputs {
     font-family: Arial;
 }
 
-input {
+h1 {
+    font-size: 70px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-bottom: solid 2px #eeeeee;
+    padding: 0;
+}
+
+footer {
+    color: #aaaaaa;
+    margin-top: 10px;
+    bottom: 0;
+    text-align: center;
+}
+
+input {                                       /*Input Styling*/
     width: 300px;
     height: 40px;
     text-align: center;
@@ -32,7 +47,7 @@ input:focus {
     background-color: #262733;
 }
 
-button {
+button {                                     /*Button Styling*/
     width: 100px;
     height: 40px;
     margin-top: 10px;
@@ -45,13 +60,13 @@ button {
     transition: 0.5s ease;
 }
 
-#register_submit {
-    background-color: #004ea7;
-}
-
 button:hover {
     background-color: #242531;
     color: #ffffff;
+}
+
+#register_submit {
+    background-color: #004ea7;
 }
 
 #register_submit:hover {
@@ -59,21 +74,10 @@ button:hover {
     color: #ffffff;
 }
 
-h1 {
-    font-size: 70px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    border-bottom: solid 2px #eeeeee;
-    padding: 0;
-}
-
-footer {
-    color: #aaaaaa;
-    margin-top: 10px;
-    bottom: 0;
-    text-align: center;
-}
-
-img.inlog {
+img.inlog {                              /*Additional Styling*/
     padding-right: 15px;
+}
+
+#theme {
+    width: 150px;
 }
