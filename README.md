@@ -6,6 +6,7 @@ Authors: Dave, Geordi, Joran en Win son.
 >   Structure and Styling   - **Dave**.  
 >   Main Site Functionality  - **Win son**.  
 >   Login and Register logic - **Geordi**.  
+>   Toekijken		     - **Joran**.
 
 
 ### Functionalities
