@@ -34,6 +34,7 @@ input {                                       /*Input Styling*/
     margin-bottom: 10px;
     border: none;
     background-color: #383a4d;
+    color: white;
     border-radius: 5px;
     font-size: 20px;
     transition: 0.6s ease;
