@@ -89,4 +89,10 @@ function hideAdd() {
         x[0].classList.remove("visi");
         z.style.transform = "rotate(0deg)";
     }
-}
+    <table id="dynamictable"  border="1" cellpadding="2">
+                <tr>
+                    <td><b>Name</b></td>
+                    <td><b>Amount</b></td>
+                </tr id="display">
+            </table>
+    }
