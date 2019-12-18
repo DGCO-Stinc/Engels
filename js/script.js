@@ -96,3 +96,4 @@ function hideAdd() {
                 </tr id="display">
             </table>
     }
+}
