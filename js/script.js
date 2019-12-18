@@ -89,11 +89,27 @@ function hideAdd() {
         x[0].classList.remove("visi");
         z.style.transform = "rotate(0deg)";
     }
-    <table id="dynamictable"  border="1" cellpadding="2">
-                <tr>
-                    <td><b>Name</b></td>
-                    <td><b>Amount</b></td>
-                </tr id="display">
-            </table>
+    
+function submitdata() {
+
+    //let current
+    //document.getElementById("main3");
+    var nname = document.getElementById("name");
+    var aamount = document.getElementById("amount");
+    var page = document.getElementsByClassName("content")
+
+    var table = document.getElementById("dynamictable");
+
+    var rowCount = table.rows.length;
+    var row = table.insertRow(rowCount);
+
+    row.insertCell(0).innerHTML= nname.value;
+    row.insertCell(1).innerHTML= aamount.value;
+
+    document.getElementById('type') =
+    document.getElementById('main2') =
+    document.getElementById('display').innerHTML = 
+    document.getElementById('name').value; // testen
     }
 }
+
