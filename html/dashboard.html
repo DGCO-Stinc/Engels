@@ -25,7 +25,13 @@
         </div>
 
         <div id="main2" class="hidden">
-            <h1>Income</h1>  
+            <h1>Income</h1>
+            <table id="dynamictable"  border="1" cellpadding="2">
+                <tr>
+                    <td><b>Name</b></td>
+                    <td><b>Amount</b></td>
+                </tr id="display">
+            </table>
         </div>
         <div id="main3" class="hidden">
             <h1>Expences</h1>
@@ -42,8 +48,8 @@
         <div class="form invisi">
             <h3>Enter Name</h3><input id="name" type="text" name="title">
             <h3>Enter Type</h3><select name="type">
-                <option value="Expence">Expence</option>
-                <option value="Income">Income</option>
+                <option id="expence"value="Expence">Expence</option>
+                <option id="income"value="Income">Income</option>
             </select>
             <h3>Enter amount</h3><input id="amount" type="number" name="amount" placeholder="€0" min='0' max='10000' maxlength='5' step='1'><br>
             <button type="submit" value="transfer" name="submit">Submit</button>
