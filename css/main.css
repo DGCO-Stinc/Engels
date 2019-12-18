@@ -222,3 +222,10 @@ footer {
         style of message :)
     */
 }
+
+#dynamictable {
+    position: relative;
+    right: 320%;
+    bottom: 300px;
+    display: block;
+}
