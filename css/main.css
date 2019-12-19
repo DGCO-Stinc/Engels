@@ -207,7 +207,8 @@ footer {
     width: 50%;
     margin: 4%;
     margin-left: 25%;
-    margin-top: 300%; 
+    position: absolute;
+    bottom: 10px;
 }
                                                                     /*php*/
 .message_error
