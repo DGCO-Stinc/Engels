@@ -1,3 +1,15 @@
+<?php
+session_start();
+require("../php/user.class.php");
+$USR = new User();
+
+if(!$USR->is_loggedin())
+{
+    header("Location: login.html");
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,17 +60,32 @@
     <div class="content2">
         <div onclick="hideAdd()"><i class="material-icons" id="btn">add</i></div>
         <div class="form invisi">
-            <h3>Enter Name</h3><input id="name" type="text" name="title">
-            <h3>Enter Type</h3><select name="type">
-                <option id="expence"value="Expence">Expence</option>
-                <option id="income"value="Income">Income</option>
+            <h3>Enter Name</h3>
+            <input id="input_name" type="text" name="input_name">
+            <h3>Enter Type</h3>
+            <select name="input_type">
+                <option id="expence" value="expence">Expence</option>
+                <option id="income" value="income">Income</option>
             </select>
-            <h3>Enter amount</h3><input id="amount" type="number" name="amount" placeholder="€0" min='0' max='10000' maxlength='5' step='1'><br>
-            <button type="submit" value="transfer" name="submit">Submit</button>
+
+            <h3>Enter amount</h3>
+            <input id="input_amount" type="number" name="input_amount" placeholder="€0" min='0' max='10000' maxlength='5' step='1'>
+            <h3>Enter spread</h3>
+            <select name="input_spread">
+                <option id="spread_single" value="spread_single">Single time</option>
+                <option id="spread_daily" value="spread_daily">Daily</option>
+                <option id="spread_weekly" value="spread_weekly">Weekly</option>
+                <option id="spread_monthly" value="spread_monthly">Monthly</option>
+                <option id="spread_yearly" value="spread_yearly">Annually</option>
+            </select>
+            <br>
+            <button type="input_submit" value="transfer" name="input_submit">Submit</button>
             <button id="clear" onclick="clearInput()">Clear</button>
             <footer>- 2019-2020 @ Dave Geordi Joran Winson -</footer>
         </div>   
     </div>
     <script src="../js/script.js"></script>
+    <script src="../js/jquery-core.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>

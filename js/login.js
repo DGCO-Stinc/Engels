@@ -11,6 +11,7 @@ $(function()
                 type:"POST",
                 url:"../php/scripts/login.php",
                 data:({
+                    func:"login",
                     uname:username,
                     pass:pass                    
                 }),
@@ -40,8 +41,9 @@ $(function()
         $.ajax(
             {
                 type:"POST",
-                url:"../php/scripts/register.php",
+                url:"../php/scripts/login.php",
                 data:({
+                    func:"register",
                     uname:username,
                     pass:pass
                 }),

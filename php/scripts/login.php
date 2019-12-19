@@ -1,26 +1,25 @@
 <?php
-require_once("../dbh.inc.php");
-$DATA = new DATA();
-$dbh = $DATA->connect();
+// require_once("../dbh.inc.php");
+// $DATA = new DATA();
+// $dbh = $DATA->connect();
+require_once("../user.class.php");
+$USR = new User();
 
 
-if(isset($_REQUEST['uname'])&&isset($_REQUEST['pass']))
+if(isset($_REQUEST['func']) && $_REQUEST['func'] === "login")
 {
-    $uname = strtolower(filter_var($_REQUEST['uname'],FILTER_SANITIZE_STRING));
-    $pass = md5(filter_var($_REQUEST['pass'],FILTER_SANITIZE_STRING));
-    $sql = "SELECT userID, pass FROM eng_user WHERE username = ?";
-
-    $stmt = $dbh->prepare($sql);
-    $stmt->execute(array($uname));
-    $data = $stmt->fetch(PDO::FETCH_ASSOC);
-    if($data['pass'] = $pass)
+    if(isset($_REQUEST['uname'])&&isset($_REQUEST['pass']))
     {
-        session_start();
-        $_SESSION['user_ID'] = $data['userID'];
-        echo "success";
-    }else
-    {
-        echo "failed";
+        $USR->login($_REQUEST['uname'],$_REQUEST['pass']);   
     }
 }
+elseif(isset($_REQUEST['func']) && $_REQUEST['func'] === "register")
+{
+    if(isset($_REQUEST['uname'])&&isset($_REQUEST['pass']))
+    {
+        $USR->register($_REQUEST['uname'],$_REQUEST['pass']);    
+    }
+}
+
+
 
