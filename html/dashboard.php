@@ -16,6 +16,7 @@ if(!$USR->is_loggedin())
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../images/favicon.png">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>XPence</title>
@@ -40,12 +41,6 @@ if(!$USR->is_loggedin())
             <h1>Income</h1> 
             <div id="main2" class="hidden">
             <h1>Income</h1>  
-            <table id="dynamictable"  border="1" cellpadding="2">
-                <tr>
-                    <td><b>Name</b></td>
-                    <td><b>Amount</b></td>
-                </tr id="display">
-            </table>
         </div>
         <div id="main3" class="hidden">
             <h1>Expences</h1>

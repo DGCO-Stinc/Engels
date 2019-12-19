@@ -209,7 +209,6 @@ footer {
     margin-left: 25%;
     margin-top: 300%; 
 }
-
                                                                     /*php*/
 .message_error
 {
@@ -221,11 +220,4 @@ footer {
     /*
         style of message :)
     */
-}
-
-#dynamictable {
-    position: relative;
-    right: 320%;
-    bottom: 300px;
-    display: block;
 }
