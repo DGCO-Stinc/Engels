@@ -21,7 +21,7 @@ $(function()
                 {
                     if(data==="success")
                     {
-                        window.location = "dashboard.html";
+                        window.location = "dashboard.php";
                     }else if(data==="failed")
                     {
                         $("#message").append("<p class='message_error'>Wrong e-mail or password!<br>Try again</p>");
