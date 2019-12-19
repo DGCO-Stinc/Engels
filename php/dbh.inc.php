@@ -19,6 +19,7 @@ class DATA
         {
             echo $e->getTraceAsString();
             echo "<br>".$e->getMessage();
+            //return $e->getMessage();
         }
         return $this->dbh;
     }
