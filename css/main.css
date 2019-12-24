@@ -222,3 +222,21 @@ footer {
         style of message :)
     */
 }
+
+
+.card
+{
+    width: auto;
+    margin: 0;
+    padding: 0;
+    background: #222222;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.card_content
+{
+    margin: 0;
+    padding: 2px 7px 2px 7px;
+    position: relative;
+    left: 20px;
+}

@@ -35,6 +35,15 @@ if(!$USR->is_loggedin())
         </div>
         <div id="main1" class="hidden active">
             <h1>Dashboard</h1>
+            <br>
+            <br>
+            <br>
+            <div class="card">
+                <div class="card_content">
+                    <h3>Hey</h3>
+                    <button id="test_button"></button>
+                </div>
+            </div>
         </div>
 
         <div id="main2" class="hidden">
@@ -58,15 +67,15 @@ if(!$USR->is_loggedin())
             <h3>Enter Name</h3>
             <input id="input_name" type="text" name="input_name">
             <h3>Enter Type</h3>
-            <select name="input_type">
-                <option id="expence" value="expence">Expence</option>
-                <option id="income" value="income">Income</option>
+            <select id="input_type" name="input_type">
+                <option id="input_expence" value="expence">Expence</option>
+                <option id="input_income" value="income">Income</option>
             </select>
 
             <h3>Enter amount</h3>
             <input id="input_amount" type="number" name="input_amount" placeholder="€0" min='0' max='10000' maxlength='5' step='1'>
             <h3>Enter spread</h3>
-            <select name="input_spread">
+            <select id="input_spread" name="input_spread">
                 <option id="spread_single" value="spread_single">Single time</option>
                 <option id="spread_daily" value="spread_daily">Daily</option>
                 <option id="spread_weekly" value="spread_weekly">Weekly</option>
@@ -74,7 +83,7 @@ if(!$USR->is_loggedin())
                 <option id="spread_yearly" value="spread_yearly">Annually</option>
             </select>
             <br>
-            <button type="input_submit" value="transfer" name="input_submit">Submit</button>
+            <button type="button" id="input_submit" name="input_submit">Submit</button>
             <button id="clear" onclick="clearInput()">Clear</button>
             <footer>- 2019-2020 @ Dave Geordi Joran Winson -</footer>
         </div>   
@@ -84,3 +93,7 @@ if(!$USR->is_loggedin())
     <script src="../js/main.js"></script>
 </body>
 </html>
+
+<?php
+
+?>
