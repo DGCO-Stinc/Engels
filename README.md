@@ -5,8 +5,8 @@ Authors: Dave, Geordi, Joran en Win son.
 
 >   Structure and Styling   - **Dave**.  
 >   Main Site Functionality  - **Win son**.  
->   Login and Register logic - **Geordi**.  
->   Overwatching Functionality		     - **Joran**.
+>   Login & backend Development - **Geordi**.  
+>   Overwatching Functionality  - **Joran**.
 
 
 ### Functionalities
@@ -18,6 +18,7 @@ The idea to make a website to manage your income and expences.
 + Expences - Overview of all your Expences.
 + Options - Not decided what option there will be. (Dark & Light Theme)
 + Add - Add and income and expence.
++ Remove - Remove an income or expence.
 
 ### Add Function
 
