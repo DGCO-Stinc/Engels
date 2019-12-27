@@ -2,18 +2,20 @@
 
 class DATA
 {
-
-    private $uname = "deb113326_2092822";
-    private $pass = "!Hallo_123";
-    private $dbname = "deb113326_2092822";
-    private $host = "localhost";
+    private $config;
     public $dbh;
 
-    function connect()
+    public function __construct()
+    {
+        require_once("../config.php");
+        $this->config = new Config();
+    }
+
+    public function connect()
     {
         $this->dbh = null;
         try{
-            $this->dbh = new PDO("mysql:host=".$this->host.";dbname=".$this->dbname, $this->uname, $this->pass);
+            $this->dbh = new PDO("mysql:host=".$this->config->getHost().";dbname=".$this->config->getDBName(), $this->config->getUname(), $this->config->getPass());
             $this->dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
         }catch(PDOException $e)
         {
