@@ -7,7 +7,7 @@ class DATA
 
     public function __construct()
     {
-        require_once("../config.php");
+        require_once("config.php");
         $this->config = new Config();
     }
 
